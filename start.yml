@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: localhost
+  gather_facts: no
+  tasks:
+  - name: Start VM
+    virt:
+      command: start
+      name: centos
